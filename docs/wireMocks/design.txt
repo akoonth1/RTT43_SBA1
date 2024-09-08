@@ -23,3 +23,15 @@ Use Flexbox and/or the Bootstrap Grid.
 Use at least two CSS animations.
 
  
+
+
+ Color palette: 
+#4793AF  -blue
+#FFC470  -yellow
+#DD5746  -red
+#8B322C  -maroon
+
+Iframe carousel as
+
+
+pokedex?
