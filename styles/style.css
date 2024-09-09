@@ -4,7 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     background-color: #4793AF;
     flex-wrap: wrap ;
     font-family: roboto;
@@ -40,33 +40,40 @@ body {
 .container {
     display: flex;
     padding: 20px;
-    display: flex;
+
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-left: 0px;
     border-radius: 25px;
-    height: 800px;
-    width: 960px;
+    width: 80vw;
+    max-width: 1080px;
+  
 }
 
 
 .box {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width:  480px;
+    justify-content: center;
+    width:  30vw;
+    min-width: 300px;
+    max-width: 500px;
     height: 800px;
+    max-height: fit-content;
     flex-direction: column;
-    flex: 1 1 300px;
+    margin: 5px;
+
+
+    
   }
 
 .mapbox {
-    height: 500px;
-    width: 960px;
+ 
     align-items: center;
     justify-content: center;
     border-radius: 25px;
+    width: 100%;
 }
 
 .imagebox {
@@ -88,11 +95,14 @@ object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: min(30vw, 300px);
+    width: min( 300px);
     height: 300px;
     flex-direction: column;
     border-radius: 25px;
     margin: 20px;
+    flex-wrap: wrap;
+
+
   }
 
 .navb {
@@ -331,6 +341,23 @@ margin-top: -50px;
     background-color: rgb(255, 255, 255);
 }
 
+
+/* Animated eye movment */
+@keyframes eyeshiftr {
+
+    from { margin-left: -50;}
+    to { margin-left: -70;}
+
+}
+
+@keyframes eyeshiftl {
+
+    from { margin-left: 110;}
+    to { margin-left: 90;}
+
+}
+
+
 .eyeri {
     position: absolute;
     margin-top: 120;
@@ -341,7 +368,7 @@ margin-top: -50px;
     border-radius: 150px 150px 0 0;
     background-color: rgb(208, 34, 34);
     animation: eyeshiftr;
-    animation-duration: 3s;
+    animation-duration: 2s;
 
 }
 
@@ -356,23 +383,11 @@ margin-top: -50px;
     border-radius: 150px 150px 0 0;
     background-color: rgb(208, 34, 34);
     animation: eyeshiftl;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 
-@keyframes eyeshiftr {
 
-    from { margin-left: -50;}
-    to { margin-left: -70;}
-
-}
-
-@keyframes eyeshiftl {
-
-    from { margin-left: 110;}
-    to { margin-left: 90;}
-
-}
 
 .semi-circle {
     width: 100px;
@@ -427,7 +442,6 @@ margin-top: -50px;
     align-content: center;
     margin-left: 10px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    flex-direction: row;
 
 }
 
@@ -445,7 +459,7 @@ margin-top: -50px;
 
 
 .containerflex2 {
-    display: flex;
+
     align-items: center;
     height: 50vh   ;
     justify-content: center;
